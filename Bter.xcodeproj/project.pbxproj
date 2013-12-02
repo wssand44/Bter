@@ -14,14 +14,23 @@
 		18447931184ABF6D0017ED42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18447930184ABF6D0017ED42 /* main.m */; };
 		18447935184ABF6D0017ED42 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18447934184ABF6D0017ED42 /* WSAppDelegate.m */; };
 		18447938184ABF6D0017ED42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18447936184ABF6D0017ED42 /* Main.storyboard */; };
-		1844793B184ABF6D0017ED42 /* WSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844793A184ABF6D0017ED42 /* WSFirstViewController.m */; };
-		1844793E184ABF6D0017ED42 /* WSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844793D184ABF6D0017ED42 /* WSSecondViewController.m */; };
 		18447940184ABF6D0017ED42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1844793F184ABF6D0017ED42 /* Images.xcassets */; };
 		18447947184ABF6D0017ED42 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18447946184ABF6D0017ED42 /* XCTest.framework */; };
 		18447948184ABF6D0017ED42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18447924184ABF6D0017ED42 /* Foundation.framework */; };
 		18447949184ABF6D0017ED42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18447928184ABF6D0017ED42 /* UIKit.framework */; };
 		18447951184ABF6D0017ED42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1844794F184ABF6D0017ED42 /* InfoPlist.strings */; };
 		18447953184ABF6D0017ED42 /* BterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18447952184ABF6D0017ED42 /* BterTests.m */; };
+		574B3CA8184C16ED008E2687 /* UIViewController+Bter.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3C9B184C16ED008E2687 /* UIViewController+Bter.m */; };
+		574B3CA9184C16ED008E2687 /* WSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3C9D184C16ED008E2687 /* WSBaseViewController.m */; };
+		574B3CAA184C16ED008E2687 /* WSDepthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3C9F184C16ED008E2687 /* WSDepthViewController.m */; };
+		574B3CAB184C16ED008E2687 /* WSPickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CA1184C16ED008E2687 /* WSPickerDataSource.m */; };
+		574B3CAC184C16ED008E2687 /* WSPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CA3184C16ED008E2687 /* WSPrivateViewController.m */; };
+		574B3CAD184C16ED008E2687 /* WSTickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CA5184C16ED008E2687 /* WSTickerViewController.m */; };
+		574B3CAE184C16ED008E2687 /* WSTradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CA7184C16ED008E2687 /* WSTradeViewController.m */; };
+		574B3CC4184C174E008E2687 /* NSString+AGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CC1184C174E008E2687 /* NSString+AGCategory.m */; };
+		574B3CC5184C174E008E2687 /* NSURL+AGCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B3CC3184C174E008E2687 /* NSURL+AGCategory.m */; };
+		74E10B4655C3401EBA61560B /* libPods-BterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811CF39667EA48C8B7C4EC46 /* libPods-BterTests.a */; };
+		7EBB74806D244C02B2526B0F /* libPods-Bter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1199FA6CE454A25A1A7090C /* libPods-Bter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FAA33083734E57A8CAFB06 /* Pods-Bter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bter.xcconfig"; path = "Pods/Pods-Bter.xcconfig"; sourceTree = "<group>"; };
 		18447921184ABF6D0017ED42 /* Bter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18447924184ABF6D0017ED42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18447926184ABF6D0017ED42 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,16 +56,33 @@
 		18447933184ABF6D0017ED42 /* WSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
 		18447934184ABF6D0017ED42 /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
 		18447937184ABF6D0017ED42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18447939184ABF6D0017ED42 /* WSFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSFirstViewController.h; sourceTree = "<group>"; };
-		1844793A184ABF6D0017ED42 /* WSFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSFirstViewController.m; sourceTree = "<group>"; };
-		1844793C184ABF6D0017ED42 /* WSSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSSecondViewController.h; sourceTree = "<group>"; };
-		1844793D184ABF6D0017ED42 /* WSSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSSecondViewController.m; sourceTree = "<group>"; };
 		1844793F184ABF6D0017ED42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18447945184ABF6D0017ED42 /* BterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18447946184ABF6D0017ED42 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1844794E184ABF6D0017ED42 /* BterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BterTests-Info.plist"; sourceTree = "<group>"; };
 		18447950184ABF6D0017ED42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18447952184ABF6D0017ED42 /* BterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BterTests.m; sourceTree = "<group>"; };
+		574B3C9A184C16ED008E2687 /* UIViewController+Bter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Bter.h"; sourceTree = "<group>"; };
+		574B3C9B184C16ED008E2687 /* UIViewController+Bter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Bter.m"; sourceTree = "<group>"; };
+		574B3C9C184C16ED008E2687 /* WSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSBaseViewController.h; sourceTree = "<group>"; };
+		574B3C9D184C16ED008E2687 /* WSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSBaseViewController.m; sourceTree = "<group>"; };
+		574B3C9E184C16ED008E2687 /* WSDepthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDepthViewController.h; sourceTree = "<group>"; };
+		574B3C9F184C16ED008E2687 /* WSDepthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDepthViewController.m; sourceTree = "<group>"; };
+		574B3CA0184C16ED008E2687 /* WSPickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPickerDataSource.h; sourceTree = "<group>"; };
+		574B3CA1184C16ED008E2687 /* WSPickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPickerDataSource.m; sourceTree = "<group>"; };
+		574B3CA2184C16ED008E2687 /* WSPrivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPrivateViewController.h; sourceTree = "<group>"; };
+		574B3CA3184C16ED008E2687 /* WSPrivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPrivateViewController.m; sourceTree = "<group>"; };
+		574B3CA4184C16ED008E2687 /* WSTickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTickerViewController.h; sourceTree = "<group>"; };
+		574B3CA5184C16ED008E2687 /* WSTickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTickerViewController.m; sourceTree = "<group>"; };
+		574B3CA6184C16ED008E2687 /* WSTradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTradeViewController.h; sourceTree = "<group>"; };
+		574B3CA7184C16ED008E2687 /* WSTradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTradeViewController.m; sourceTree = "<group>"; };
+		574B3CC0184C174E008E2687 /* NSString+AGCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AGCategory.h"; sourceTree = "<group>"; };
+		574B3CC1184C174E008E2687 /* NSString+AGCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AGCategory.m"; sourceTree = "<group>"; };
+		574B3CC2184C174E008E2687 /* NSURL+AGCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+AGCategory.h"; sourceTree = "<group>"; };
+		574B3CC3184C174E008E2687 /* NSURL+AGCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+AGCategory.m"; sourceTree = "<group>"; };
+		657AFBB7C7734BDD8B58E757 /* Pods-BterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BterTests.xcconfig"; path = "Pods/Pods-BterTests.xcconfig"; sourceTree = "<group>"; };
+		811CF39667EA48C8B7C4EC46 /* libPods-BterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1199FA6CE454A25A1A7090C /* libPods-Bter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +93,7 @@
 				18447927184ABF6D0017ED42 /* CoreGraphics.framework in Frameworks */,
 				18447929184ABF6D0017ED42 /* UIKit.framework in Frameworks */,
 				18447925184ABF6D0017ED42 /* Foundation.framework in Frameworks */,
+				7EBB74806D244C02B2526B0F /* libPods-Bter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +104,7 @@
 				18447947184ABF6D0017ED42 /* XCTest.framework in Frameworks */,
 				18447949184ABF6D0017ED42 /* UIKit.framework in Frameworks */,
 				18447948184ABF6D0017ED42 /* Foundation.framework in Frameworks */,
+				74E10B4655C3401EBA61560B /* libPods-BterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +118,8 @@
 				1844794C184ABF6D0017ED42 /* BterTests */,
 				18447923184ABF6D0017ED42 /* Frameworks */,
 				18447922184ABF6D0017ED42 /* Products */,
+				08FAA33083734E57A8CAFB06 /* Pods-Bter.xcconfig */,
+				657AFBB7C7734BDD8B58E757 /* Pods-BterTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +139,8 @@
 				18447926184ABF6D0017ED42 /* CoreGraphics.framework */,
 				18447928184ABF6D0017ED42 /* UIKit.framework */,
 				18447946184ABF6D0017ED42 /* XCTest.framework */,
+				C1199FA6CE454A25A1A7090C /* libPods-Bter.a */,
+				811CF39667EA48C8B7C4EC46 /* libPods-BterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,13 +148,10 @@
 		1844792A184ABF6D0017ED42 /* Bter */ = {
 			isa = PBXGroup;
 			children = (
+				574B3C99184C16ED008E2687 /* Classes */,
 				18447933184ABF6D0017ED42 /* WSAppDelegate.h */,
 				18447934184ABF6D0017ED42 /* WSAppDelegate.m */,
 				18447936184ABF6D0017ED42 /* Main.storyboard */,
-				18447939184ABF6D0017ED42 /* WSFirstViewController.h */,
-				1844793A184ABF6D0017ED42 /* WSFirstViewController.m */,
-				1844793C184ABF6D0017ED42 /* WSSecondViewController.h */,
-				1844793D184ABF6D0017ED42 /* WSSecondViewController.m */,
 				1844793F184ABF6D0017ED42 /* Images.xcassets */,
 				1844792B184ABF6D0017ED42 /* Supporting Files */,
 			);
@@ -157,6 +187,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		574B3C99184C16ED008E2687 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				574B3CBF184C174E008E2687 /* AGCategory */,
+				574B3C9A184C16ED008E2687 /* UIViewController+Bter.h */,
+				574B3C9B184C16ED008E2687 /* UIViewController+Bter.m */,
+				574B3C9C184C16ED008E2687 /* WSBaseViewController.h */,
+				574B3C9D184C16ED008E2687 /* WSBaseViewController.m */,
+				574B3C9E184C16ED008E2687 /* WSDepthViewController.h */,
+				574B3C9F184C16ED008E2687 /* WSDepthViewController.m */,
+				574B3CA0184C16ED008E2687 /* WSPickerDataSource.h */,
+				574B3CA1184C16ED008E2687 /* WSPickerDataSource.m */,
+				574B3CA2184C16ED008E2687 /* WSPrivateViewController.h */,
+				574B3CA3184C16ED008E2687 /* WSPrivateViewController.m */,
+				574B3CA4184C16ED008E2687 /* WSTickerViewController.h */,
+				574B3CA5184C16ED008E2687 /* WSTickerViewController.m */,
+				574B3CA6184C16ED008E2687 /* WSTradeViewController.h */,
+				574B3CA7184C16ED008E2687 /* WSTradeViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		574B3CBF184C174E008E2687 /* AGCategory */ = {
+			isa = PBXGroup;
+			children = (
+				574B3CC0184C174E008E2687 /* NSString+AGCategory.h */,
+				574B3CC1184C174E008E2687 /* NSString+AGCategory.m */,
+				574B3CC2184C174E008E2687 /* NSURL+AGCategory.h */,
+				574B3CC3184C174E008E2687 /* NSURL+AGCategory.m */,
+			);
+			path = AGCategory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18447956184ABF6D0017ED42 /* Build configuration list for PBXNativeTarget "Bter" */;
 			buildPhases = (
+				EBAB9AAFD9DA4EB097B2ADCB /* Check Pods Manifest.lock */,
 				1844791D184ABF6D0017ED42 /* Sources */,
 				1844791E184ABF6D0017ED42 /* Frameworks */,
 				1844791F184ABF6D0017ED42 /* Resources */,
+				EC5D5E05DBC04A84908D603D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18447959184ABF6D0017ED42 /* Build configuration list for PBXNativeTarget "BterTests" */;
 			buildPhases = (
+				85D51C69546E413F958F6D3F /* Check Pods Manifest.lock */,
 				18447941184ABF6D0017ED42 /* Sources */,
 				18447942184ABF6D0017ED42 /* Frameworks */,
 				18447943184ABF6D0017ED42 /* Resources */,
+				CD5DD484F92B4A0E82384AF2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,15 +317,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85D51C69546E413F958F6D3F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5DD484F92B4A0E82384AF2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAB9AAFD9DA4EB097B2ADCB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5D5E05DBC04A84908D603D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Bter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1844791D184ABF6D0017ED42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1844793E184ABF6D0017ED42 /* WSSecondViewController.m in Sources */,
-				1844793B184ABF6D0017ED42 /* WSFirstViewController.m in Sources */,
 				18447935184ABF6D0017ED42 /* WSAppDelegate.m in Sources */,
+				574B3CAC184C16ED008E2687 /* WSPrivateViewController.m in Sources */,
+				574B3CC5184C174E008E2687 /* NSURL+AGCategory.m in Sources */,
+				574B3CAA184C16ED008E2687 /* WSDepthViewController.m in Sources */,
+				574B3CAB184C16ED008E2687 /* WSPickerDataSource.m in Sources */,
+				574B3CA9184C16ED008E2687 /* WSBaseViewController.m in Sources */,
 				18447931184ABF6D0017ED42 /* main.m in Sources */,
+				574B3CAD184C16ED008E2687 /* WSTickerViewController.m in Sources */,
+				574B3CAE184C16ED008E2687 /* WSTradeViewController.m in Sources */,
+				574B3CA8184C16ED008E2687 /* UIViewController+Bter.m in Sources */,
+				574B3CC4184C174E008E2687 /* NSString+AGCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,12 +519,14 @@
 		};
 		18447957184ABF6D0017ED42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FAA33083734E57A8CAFB06 /* Pods-Bter.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bter/Bter-Prefix.pch";
 				INFOPLIST_FILE = "Bter/Bter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,12 +534,14 @@
 		};
 		18447958184ABF6D0017ED42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FAA33083734E57A8CAFB06 /* Pods-Bter.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bter/Bter-Prefix.pch";
 				INFOPLIST_FILE = "Bter/Bter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +549,7 @@
 		};
 		1844795A184ABF6D0017ED42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657AFBB7C7734BDD8B58E757 /* Pods-BterTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bter.app/Bter";
@@ -431,6 +573,7 @@
 		};
 		1844795B184ABF6D0017ED42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657AFBB7C7734BDD8B58E757 /* Pods-BterTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bter.app/Bter";
@@ -467,6 +610,7 @@
 				18447958184ABF6D0017ED42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18447959184ABF6D0017ED42 /* Build configuration list for PBXNativeTarget "BterTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +619,7 @@
 				1844795B184ABF6D0017ED42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

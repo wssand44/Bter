@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WSFirstViewController : UIViewController
+@interface WSTickerViewController : WSBaseViewController
 
 @end

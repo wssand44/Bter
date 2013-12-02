@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WSSecondViewController : UIViewController
+@interface WSDepthViewController : WSBaseViewController
 
 @end
